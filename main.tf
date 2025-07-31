@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "name" {
-  ami = nonsensitive(data.aws_ssm_parameter.amzn2_linux.value)
+  ami = "ami-0bcb08446fd149731"
   instance_type = "t2.micro"
   count = var.core_count
   tags = {
