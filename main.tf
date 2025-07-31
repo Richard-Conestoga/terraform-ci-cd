@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_instance" "name" {
-  ami = "ami-0bcb08446fd149731"
+  ami = "ami-09ac0b140f63d3458"
   instance_type = "t2.micro"
   count = var.core_count
   tags = {
